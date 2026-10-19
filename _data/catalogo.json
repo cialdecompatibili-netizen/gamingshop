@@ -1,28 +1,224 @@
 {
  "_nota": "PRODOTTI DI PROVA (demo completa: 5 categorie, prodotti fisici e digitali, uno nascosto). Le categorie con 0 prodotti visibili non hanno pagina. L'id 'categoria' e' riservato. Fonte UNICA: la leggono /negozio/, le pagine prodotto (_plugins/ecommerce.rb), il carrello nel menu (_includes/header.liquid) e l'admin (E-commerce). prezzo_centesimi = euro x 100. tipo = fisico (l'ordine chiede l'indirizzo di spedizione) oppure digitale (nessun indirizzo); tipo mancante = fisico. descrizione = testo breve (accanto alla foto); descrizione_completa = testo lungo (sotto, paragrafi separati da a capo); immagine = percorso sotto assets/img (es. assets/img/prodotti/kit.jpg), vuota = si vede l'icona. visibile=false nasconde il prodotto (niente pagina, niente acquisto).",
  "categorie": [
-  {"id": "casa", "nome": "Casa e benessere", "icona": "🌿"},
-  {"id": "dispensa", "nome": "Dispensa e caffè", "icona": "🍝"},
-  {"id": "regali", "nome": "Regali", "icona": "🎁"},
-  {"id": "accessori", "nome": "Accessori", "icona": "🎒"},
-  {"id": "digitale", "nome": "Prodotti digitali", "icona": "💾"}
+  {
+   "id": "periferiche",
+   "nome": "Periferiche",
+   "icona": "🖱️"
+  },
+  {
+   "id": "audio",
+   "nome": "Audio e streaming",
+   "icona": "🎧"
+  },
+  {
+   "id": "setup",
+   "nome": "Setup e comfort",
+   "icona": "🪑"
+  },
+  {
+   "id": "merch",
+   "nome": "Merchandising",
+   "icona": "👕"
+  },
+  {
+   "id": "digitale",
+   "nome": "Guide e coaching",
+   "icona": "📘"
+  }
  ],
  "prodotti": [
-  {"id": "casa-eco", "nome": "Kit Casa Eco", "descrizione": "Detersivi e prodotti per la casa a ricarica.", "categoria": "casa", "icona": "🌿", "tipo": "fisico", "prezzo_centesimi": 3200, "descrizione_completa": "Un kit pensato per ridurre plastica e sprechi in casa: detersivi concentrati da diluire e flaconi riutilizzabili da ricaricare.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati, le istruzioni d'uso e tutto ciò che il cliente deve sapere prima di acquistare.", "immagine": "assets/img/8.jpg", "visibile": true},
-  {"id": "benessere", "nome": "Set Benessere", "descrizione": "Cura del corpo e relax, con novità da provare.", "descrizione_completa": "Una selezione di prodotti per la cura del corpo e il relax, da usare con calma a fine giornata.\nÈ un prodotto di prova: qui puoi descrivere cosa contiene il set, come si usa e a chi è consigliato.", "categoria": "casa", "icona": "🧴", "tipo": "fisico", "prezzo_centesimi": 3500, "visibile": true},
-  {"id": "detersivo-ricarica", "nome": "Detersivo a ricarica", "descrizione": "Detersivo concentrato per piatti e superfici, con flacone riutilizzabile.", "descrizione_completa": "Detersivo concentrato per piatti e superfici, con flacone riutilizzabile.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "casa", "icona": "🧽", "tipo": "fisico", "prezzo_centesimi": 890, "visibile": true},
-  {"id": "candela-soia", "nome": "Candela di soia", "descrizione": "Candela profumata a cera vegetale, circa 40 ore di durata.", "descrizione_completa": "Candela profumata a cera vegetale, circa 40 ore di durata.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "casa", "icona": "🕯️", "tipo": "fisico", "prezzo_centesimi": 1450, "visibile": true},
-  {"id": "dispensa-italiana", "nome": "Dispensa Italiana", "descrizione": "Prodotti artigianali italiani scelti da noi.", "descrizione_completa": "Prodotti artigianali italiani scelti uno a uno per la dispensa di tutti i giorni.\nÈ un prodotto di prova: elenca qui i prodotti inclusi, la provenienza e le informazioni utili per la conservazione.", "categoria": "dispensa", "icona": "🍝", "tipo": "fisico", "prezzo_centesimi": 2900, "visibile": true},
-  {"id": "caffe-e-te", "nome": "Caffè e Tè", "descrizione": "Caffè e tè freschi, per non restare mai senza.", "descrizione_completa": "Caffè e tè freschi per la colazione, la pausa e il dopocena.\nÈ un prodotto di prova: indica qui le varietà, il formato delle confezioni e i consigli di preparazione.", "categoria": "dispensa", "icona": "☕", "tipo": "fisico", "prezzo_centesimi": 2400, "visibile": true},
-  {"id": "olio-evo", "nome": "Olio extravergine 500 ml", "descrizione": "Olio EVO di frantoio italiano, spremuto a freddo.", "descrizione_completa": "Olio EVO di frantoio italiano, spremuto a freddo.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "dispensa", "icona": "🫒", "tipo": "fisico", "prezzo_centesimi": 1190, "visibile": true},
-  {"id": "miele-millefiori", "nome": "Miele millefiori", "descrizione": "Miele artigianale italiano, vasetto da 400 g.", "descrizione_completa": "Miele artigianale italiano, vasetto da 400 g.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "dispensa", "icona": "🍯", "tipo": "fisico", "prezzo_centesimi": 780, "visibile": true},
-  {"id": "box-regalo", "nome": "Cesto regalo", "descrizione": "Una selezione di prodotti italiani in una confezione regalo.", "descrizione_completa": "Una selezione di prodotti italiani in una confezione regalo.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "regali", "icona": "🎁", "tipo": "fisico", "prezzo_centesimi": 4900, "visibile": true},
-  {"id": "buono-regalo", "nome": "Buono regalo digitale", "descrizione": "Buono da regalare, ricevuto via email in pochi minuti.", "descrizione_completa": "Buono da regalare, ricevuto via email in pochi minuti.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "regali", "icona": "🎟️", "tipo": "digitale", "prezzo_centesimi": 2500, "visibile": true},
-  {"id": "borraccia", "nome": "Borraccia in acciaio", "descrizione": "Borraccia termica da 500 ml, senza plastica.", "descrizione_completa": "Borraccia termica da 500 ml, senza plastica.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "accessori", "icona": "🥤", "tipo": "fisico", "prezzo_centesimi": 1900, "visibile": true},
-  {"id": "tote-bag", "nome": "Tote bag in cotone", "descrizione": "Borsa in cotone organico, resistente e lavabile.", "descrizione_completa": "Borsa in cotone organico, resistente e lavabile.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "accessori", "icona": "👜", "tipo": "fisico", "prezzo_centesimi": 1200, "visibile": true},
-  {"id": "guida-casa-eco", "nome": "Guida Casa Eco (PDF)", "descrizione": "Guida digitale: come ridurre sprechi e plastica in casa.", "descrizione_completa": "Una guida in formato PDF con consigli pratici per ridurre sprechi e plastica in casa, stanza per stanza.\nÈ un prodotto digitale: non richiede nessun indirizzo di spedizione. Indica qui il numero di pagine, il formato del file e come viene consegnato.", "categoria": "digitale", "icona": "📘", "tipo": "digitale", "prezzo_centesimi": 900, "visibile": true},
-  {"id": "ricettario-digitale", "nome": "Ricettario digitale", "descrizione": "Cento ricette di stagione in formato digitale.", "descrizione_completa": "Cento ricette di stagione in formato digitale, facili da consultare da telefono o da computer.\nÈ un prodotto digitale: non richiede nessun indirizzo di spedizione. Indica qui come funziona la consegna e se ci sono aggiornamenti inclusi.", "categoria": "digitale", "icona": "📖", "tipo": "digitale", "prezzo_centesimi": 1200, "visibile": true},
-  {"id": "corso-orto", "nome": "Mini corso: orto sul balcone", "descrizione": "Videolezioni e schede per coltivare erbe e ortaggi in poco spazio.", "descrizione_completa": "Videolezioni e schede per coltivare erbe e ortaggi in poco spazio.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "digitale", "icona": "🌱", "tipo": "digitale", "prezzo_centesimi": 1900, "visibile": true},
-  {"id": "prodotto-nascosto", "nome": "Prodotto nascosto (demo)", "descrizione": "Esempio di prodotto non visibile: non compare nel negozio.", "descrizione_completa": "Esempio di prodotto non visibile: non compare nel negozio.\nÈ un prodotto di prova: sostituisci questo testo con la descrizione vera, i formati e tutto ciò che il cliente deve sapere prima di acquistare.", "categoria": "accessori", "icona": "🙈", "tipo": "fisico", "prezzo_centesimi": 500, "visibile": false}
+  {
+   "id": "mouse-pro-wireless",
+   "nome": "Mouse gaming wireless 26K",
+   "descrizione": "Sensore ad alta precisione, 70 ore di batteria.",
+   "categoria": "periferiche",
+   "icona": "🖱️",
+   "tipo": "fisico",
+   "prezzo_centesimi": 4990,
+   "descrizione_completa": "Mouse wireless leggero (circa 60 g) con sensore ottico fino a 26.000 DPI, connessione 2,4 GHz a bassa latenza e Bluetooth. Pensato per FPS e MOBA.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/1.jpg",
+   "visibile": true
+  },
+  {
+   "id": "tastiera-meccanica-75",
+   "nome": "Tastiera meccanica 75% hot-swap",
+   "descrizione": "Switch lineari sostituibili senza saldature.",
+   "categoria": "periferiche",
+   "icona": "⌨️",
+   "tipo": "fisico",
+   "prezzo_centesimi": 7990,
+   "descrizione_completa": "Layout compatto al 75% con tasti freccia, switch hot-swap, retroilluminazione RGB e cavo USB-C staccabile.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/2.jpg",
+   "visibile": true
+  },
+  {
+   "id": "tappetino-xxl",
+   "nome": "Tappetino XXL antiscivolo",
+   "descrizione": "90x40 cm, bordi cuciti, base in gomma.",
+   "categoria": "periferiche",
+   "icona": "🟦",
+   "tipo": "fisico",
+   "prezzo_centesimi": 1990,
+   "descrizione_completa": "Superficie in tessuto micro-texture per mouse e tastiera, base in gomma antiscivolo, bordi cuciti che non si sfilacciano.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/3.jpg",
+   "visibile": true
+  },
+  {
+   "id": "controller-pc-console",
+   "nome": "Controller wireless PC e console",
+   "descrizione": "Compatibile PC, Android e Switch.",
+   "categoria": "periferiche",
+   "icona": "🎮",
+   "tipo": "fisico",
+   "prezzo_centesimi": 3490,
+   "descrizione_completa": "Controller senza fili con vibrazione, giroscopio e batteria da 15 ore. Si collega a PC, Android e Nintendo Switch.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/4.jpg",
+   "visibile": true
+  },
+  {
+   "id": "cuffie-surround",
+   "nome": "Cuffie gaming con microfono",
+   "descrizione": "Audio surround 7.1 virtuale, cuscinetti memory.",
+   "categoria": "audio",
+   "icona": "🎧",
+   "tipo": "fisico",
+   "prezzo_centesimi": 4490,
+   "descrizione_completa": "Cuffie over-ear con microfono staccabile con cancellazione del rumore, cuscinetti in memory foam e controllo volume sul padiglione.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/5.jpg",
+   "visibile": true
+  },
+  {
+   "id": "microfono-usb",
+   "nome": "Microfono USB per streaming",
+   "descrizione": "Capsula cardioide, filtro anti-pop incluso.",
+   "categoria": "audio",
+   "icona": "🎙️",
+   "tipo": "fisico",
+   "prezzo_centesimi": 3990,
+   "descrizione_completa": "Microfono a condensatore USB plug and play con pulsante mute, regolazione guadagno e braccio da scrivania.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/6.jpg",
+   "visibile": true
+  },
+  {
+   "id": "webcam-1080",
+   "nome": "Webcam Full HD 60 fps",
+   "descrizione": "Messa a fuoco automatica e copertura privacy.",
+   "categoria": "audio",
+   "icona": "📷",
+   "tipo": "fisico",
+   "prezzo_centesimi": 5490,
+   "descrizione_completa": "Webcam 1080p a 60 fotogrammi con autofocus, doppio microfono e copriobiettivo scorrevole per la privacy.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/7.jpg",
+   "visibile": true
+  },
+  {
+   "id": "luci-led-scrivania",
+   "nome": "Barre LED RGB per scrivania",
+   "descrizione": "Coppia di barre sincronizzabili con la musica.",
+   "categoria": "setup",
+   "icona": "💡",
+   "tipo": "fisico",
+   "prezzo_centesimi": 2990,
+   "descrizione_completa": "Due barre LED RGB con 16 milioni di colori, controllo da app e sincronizzazione con musica o schermo.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/8.jpg",
+   "visibile": true
+  },
+  {
+   "id": "supporto-cuffie",
+   "nome": "Supporto cuffie con hub USB",
+   "descrizione": "Alluminio, 3 porte USB incluse.",
+   "categoria": "setup",
+   "icona": "🗄️",
+   "tipo": "fisico",
+   "prezzo_centesimi": 2490,
+   "descrizione_completa": "Supporto da scrivania in alluminio per le cuffie con hub USB 3.0 a 3 porte e base antiscivolo.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/9.jpg",
+   "visibile": true
+  },
+  {
+   "id": "sedia-ergonomica",
+   "nome": "Sedia gaming ergonomica",
+   "descrizione": "Supporto lombare regolabile, schienale reclinabile.",
+   "categoria": "setup",
+   "icona": "🪑",
+   "tipo": "fisico",
+   "prezzo_centesimi": 18900,
+   "descrizione_completa": "Sedia con braccioli 4D, supporto lombare regolabile, schienale reclinabile fino a 155 gradi e rivestimento traspirante. Spedizione a domicilio.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/10.jpg",
+   "visibile": true
+  },
+  {
+   "id": "tshirt-level-up",
+   "nome": "T-shirt Level Up",
+   "descrizione": "Cotone pesante, taglie S-XXL.",
+   "categoria": "merch",
+   "icona": "👕",
+   "tipo": "fisico",
+   "prezzo_centesimi": 2190,
+   "descrizione_completa": "T-shirt in cotone pesante 100% con stampa resistente ai lavaggi. Taglie da S a XXL.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/11.jpg",
+   "visibile": true
+  },
+  {
+   "id": "felpa-respawn",
+   "nome": "Felpa Respawn",
+   "descrizione": "Felpa con cappuccio, interno felpato.",
+   "categoria": "merch",
+   "icona": "🧥",
+   "tipo": "fisico",
+   "prezzo_centesimi": 4490,
+   "descrizione_completa": "Felpa con cappuccio e tasca a marsupio, interno felpato e ricamo sul petto. Taglie da S a XXL.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/12.jpg",
+   "visibile": true
+  },
+  {
+   "id": "tazza-ready-player",
+   "nome": "Tazza Ready Player",
+   "descrizione": "Ceramica da 350 ml, lavabile in lavastoviglie.",
+   "categoria": "merch",
+   "icona": "☕",
+   "tipo": "fisico",
+   "prezzo_centesimi": 1290,
+   "descrizione_completa": "Tazza in ceramica da 350 ml con stampa che resiste alla lavastoviglie.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/1.jpg",
+   "visibile": true
+  },
+  {
+   "id": "guida-pc-gaming",
+   "nome": "Guida: costruire il tuo PC gaming",
+   "descrizione": "PDF di 60 pagine con liste componenti per ogni budget.",
+   "categoria": "digitale",
+   "icona": "📘",
+   "tipo": "digitale",
+   "prezzo_centesimi": 990,
+   "descrizione_completa": "Guida in PDF per scegliere processore, scheda video, memoria e alimentatore senza sprecare soldi. Tre configurazioni per tre budget e un controllo di compatibilita.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/2.jpg",
+   "visibile": true
+  },
+  {
+   "id": "guida-streaming",
+   "nome": "Guida: iniziare a fare streaming",
+   "descrizione": "PDF con impostazioni, software e consigli per crescere.",
+   "categoria": "digitale",
+   "icona": "🎬",
+   "tipo": "digitale",
+   "prezzo_centesimi": 1290,
+   "descrizione_completa": "Come impostare OBS, audio e video, quali piattaforme scegliere e come costruire una piccola community fin dal primo mese.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/3.jpg",
+   "visibile": true
+  },
+  {
+   "id": "coaching-1ora",
+   "nome": "Sessione di coaching da 1 ora",
+   "descrizione": "Analisi delle tue partite con un giocatore esperto.",
+   "categoria": "digitale",
+   "icona": "🧠",
+   "tipo": "digitale",
+   "prezzo_centesimi": 2500,
+   "descrizione_completa": "Una sessione online di un ora per rivedere le tue partite e lavorare su mira, posizionamento e decisioni. Dopo l ordine ti scriviamo per concordare data e gioco.\nPrezzo e disponibilita sono indicativi: prima del lancio ordini in pre-ordine, senza pagamento.",
+   "immagine": "assets/img/4.jpg",
+   "visibile": true
+  }
  ]
 }

@@ -17,8 +17,8 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
-seo_title: "{title} | Negozio online"
-seo_description: "Negozio online con prodotti per la casa, il benessere e la dispensa, più guide e ricettari digitali. Ordini in pochi passaggi."
+seo_title: "{title} | Negozio gaming: periferiche, audio, setup"
+seo_description: "Negozio gaming online: mouse, tastiere, cuffie, setup, merchandising e guide. Ordina in pochi click, senza registrarti."
 ---
 
 <style>
@@ -80,13 +80,13 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 <!-- ===== MARTE END (html) ===== -->
 <canvas id="rete-cv" aria-hidden="true"></canvas>
 
-## Prodotti scelti per te, ordinati in pochi click.
+## Tutto per il tuo setup, scelto da chi gioca.
 
-Sfoglia il negozio, aggiungi al carrello e concludi l'ordine in pochi passaggi, senza registrarti. Prodotti per la casa, il benessere e la dispensa, più guide e ricettari digitali.
+Periferiche, audio per lo streaming, accessori per la scrivania, merchandising e guide digitali. Aggiungi al carrello e concludi l'ordine in pochi passaggi, senza registrarti.
 
-I prodotti fisici arrivano a casa tua e ti chiediamo l'indirizzo solo se ne hai nel carrello. Quelli digitali non hanno spedizione: nessun indirizzo da scrivere.
+I prodotti fisici arrivano a casa tua e ti chiediamo l'indirizzo solo se ne hai nel carrello. Guide e coaching sono digitali: nessuna spedizione.
 
-**Hai una domanda?** Scrivici e ti rispondiamo entro un giorno.
+**Non sai cosa scegliere?** Scrivici il tuo budget e i giochi che usi: ti consigliamo la configurazione giusta.
 
 </div>
 
